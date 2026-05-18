@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Cebo Mamy | Etudiant Informaticien</title>
+    <!--ici c'est mon Point d'entrée pour Vite (Bootstrap, Sass et JS locaux) -->
+    <script type="module" src="/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="position: relative; min-height: 100vh; padding-bottom: 80px;">
+    <!-- Navigation Sémantique -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand tech-title fw-bold" href="index.html">
+                <span class="text-amber">Mon CV</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header : Prénom, Photo et Titre  -->
+    <header class="hero-section py-5 text-center">
+        <div class="container">
+            <!-- Style ovale pour ma photo -->
+            <img src="jo_profil.jpeg" 
+                alt="Joseph Cebo Mamy" 
+                class="mb-4 shadow-lg profile-img" 
+                style="width: 180px; height: 240px; object-fit: cover; border-radius: 50% / 35%; border: 4px solid #f59e0b;">
+            <h1 class="display-4 fw-bold">Joseph Cebo Mamy</h1>
+            <p class=" lead text-amber">Etudiant Informaticien</p>
+        </div>
+    </header>
+
+    <main class="container py-4">
+        <div class="row g-4"> 
+            <!-- Section 1 : Mon Profil Personnel -->
+            <div class="col-md-7">
+                <article class="card h-100 p-4 rounded-4 shadow border-0">
+                    <h2 class="h4 text-amber mb-4 border-bottom pb-2">Profil Personnel</h2>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <span class="small-detail d-block mb-1 text-muted text-uppercase">Né le</span>
+                            <p class="fw-bold mb-0">29.09.1998 (Guinée)</p>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <span class="small-detail d-block mb-1 text-muted text-uppercase">Localisation</span>
+                            <p class="fw-bold mb-0">An der mühle 1, Heusweiler OT Eiweiler 66265, Allemagne</p>
+                        </div>
+                    </div>
+                    <p class="small-detail mt-2">Passionné par le développement logiciel et l'infrastructure IT.</p>
+                </article>
+            </div>
+
+            <!-- Section 2 : pour mes Contacts -->
+            <div class="col-md-5">
+                <section class="card h-100 p-4 rounded-4 shadow border-0">
+                    <h2 class="h4 text-amber mb-4 border-bottom pb-2">Contact</h2>
+                    <div class="mb-3">
+                        <span class="small-detail d-block mb-1 text-muted text-uppercase">Email</span>
+                        <p class="fw-bold mb-1">josemamy97@gmail.com</p> 
+                    </div>
+                    <div class="mb-4">
+                        <span class="small-detail d-block mb-1 text-muted text-uppercase">Mobile</span>
+                        <p class="fw-bold mb-0">+49 01785440755</p>
+                    </div>
+                    <!-- ici j'ai mes Réseaux sociaux -->
+                    <div class="d-flex gap-2 justify-content-between">
+                        <a href="https://de.linkedin.com/in/joseph-cebo-mamy-6049063a9" target="_blank" class="btn btn-outline-amber flex-fill"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/cebo_wise" target="_blank" class="btn btn-outline-amber flex-fill"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1KfgVcWKxX/?mibextid=wwXIfr" target="_blank" class="btn btn-outline-amber flex-fill"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="py-4 text-center text-muted small" style="position: absolute; bottom: 0; width: 100%; left: 0;">
+    <p>Joseph Cebo Mamy - Mon cv</p>
+    </footer>
+</body>
+</html>
